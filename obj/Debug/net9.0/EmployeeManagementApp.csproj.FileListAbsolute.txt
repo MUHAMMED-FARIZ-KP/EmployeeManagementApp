@@ -1,0 +1,13 @@
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\EmployeeManagementApp.csproj.AssemblyReference.cache
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\Avalonia\resources
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\EmployeeManagementApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\EmployeeManagementApp.AssemblyInfoInputs.cache
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\EmployeeManagementApp.AssemblyInfo.cs
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\EmployeeManagementApp.csproj.CoreCompileInputs.cache
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\Avalonia\EmployeeManagementApp.dll
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\Avalonia\EmployeeManagementApp.pdb
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\refint\Avalonia\EmployeeManagementApp.dll
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\EmployeeManagementApp.dll
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\refint\EmployeeManagementApp.dll
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net9.0\EmployeeManagementApp.pdb

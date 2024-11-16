@@ -1,0 +1,6 @@
+C:\Users\muham\OneDrive\Desktop\farhan\EmployeeManagementApp.pdb
+C:\Users\muham\OneDrive\Desktop\farhan\av_libglesv2.dll
+C:\Users\muham\OneDrive\Desktop\farhan\libHarfBuzzSharp.dll
+C:\Users\muham\OneDrive\Desktop\farhan\libSkiaSharp.dll
+C:\Users\muham\OneDrive\Desktop\farhan\e_sqlite3.dll
+C:\Users\muham\OneDrive\Desktop\farhan\EmployeeManagementApp.exe
