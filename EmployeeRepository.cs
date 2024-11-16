@@ -69,5 +69,33 @@ namespace EmployeeManagementApp
             }
             return employees;
         }
+        public void DeleteEmployee(int id)
+    {
+        using (var connection = new SqliteConnection(ConnectionString))
+        {
+            connection.Open();
+            var command = connection.CreateCommand();
+            command.CommandText = "DELETE FROM Employees WHERE Id = $id";
+            command.Parameters.AddWithValue("$id", id);
+            command.ExecuteNonQuery();
+        }
+    }
+
+    public void UpdateEmployee(Employee employee)
+    {
+        using (var connection = new SqliteConnection(ConnectionString))
+        {
+            connection.Open();
+            var command = connection.CreateCommand();
+            command.CommandText = @"
+                UPDATE Employees 
+                SET Name = $name, Department = $department
+                WHERE Id = $id";
+            command.Parameters.AddWithValue("$name", employee.Name ?? string.Empty);
+            command.Parameters.AddWithValue("$department", employee.Department ?? string.Empty);
+            command.Parameters.AddWithValue("$id", employee.Id);
+            command.ExecuteNonQuery();
+        }
+    }
     }
 }

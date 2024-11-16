@@ -2,24 +2,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="EmployeeManagementApp.Views.EmployeeListView">
 	<Grid RowDefinitions="Auto,*" Margin="10">
+		<!-- Header section -->
 		<StackPanel Grid.Row="0"
                     Orientation="Horizontal"
                     Spacing="10"
                     Margin="0,0,0,20">
 			<TextBlock Text="Employee List"
-                      FontSize="20"
-                      FontWeight="Bold"
-                      VerticalAlignment="Center"/>
+                       FontSize="20"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"/>
 		</StackPanel>
 
+		<!-- DataGrid with styling for borders and a minimum height -->
 		<DataGrid Grid.Row="1"
                   Name="employeeGrid"
                   AutoGenerateColumns="False"
-                  IsReadOnly="True">
+                  IsReadOnly="True"
+                  BorderBrush="Black"
+                  BorderThickness="1"
+                  GridLinesVisibility="All"
+                  MinHeight="120"
+			
+			MaxHeight="400" 
+			RowHeight="30"> 
 			<DataGrid.Columns>
 				<DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
 				<DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
 				<DataGridTextColumn Header="Department" Binding="{Binding Department}"/>
+
+				<!-- Actions column with Edit and Delete buttons -->
+				<DataGridTemplateColumn Header="Actions" Width="200">
+					<DataGridTemplateColumn.CellTemplate>
+						<DataTemplate>
+							<StackPanel Orientation="Horizontal" Spacing="10">
+								<Button Content="Edit"
+                                        Click="EditEmployee_Click"
+                                        Background="Blue"
+                                        Foreground="White"
+                                        Height="30"
+                                        Width="60"/>
+								<Button Content="Delete"
+                                        Click="DeleteEmployee_Click"
+                                        Background="Red"
+                                        Foreground="White"
+                                        Height="30"
+                                        Width="60"/>
+							</StackPanel>
+						</DataTemplate>
+					</DataGridTemplateColumn.CellTemplate>
+				</DataGridTemplateColumn>
 			</DataGrid.Columns>
 		</DataGrid>
 	</Grid>

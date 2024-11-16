@@ -10,15 +10,17 @@ namespace EmployeeManagementApp.Views
         private readonly AddEmployeeView _addEmployeeView;
 
         public MainWindow()
-        {
-            InitializeComponent();
-            _repository = new EmployeeRepository();
-            _repository.InitializeDatabase();
+{
+    InitializeComponent();
+    _repository = new EmployeeRepository();
+    _repository.InitializeDatabase();
 
-            // Initialize views
-            _employeeListView = new EmployeeListView(_repository);
-            _addEmployeeView = new AddEmployeeView(_repository);
-        }
+    var contentArea = this.FindControl<ContentControl>("contentArea");
+    
+    // Initialize views
+    _employeeListView = new EmployeeListView(_repository, contentArea);
+    _addEmployeeView = new AddEmployeeView(_repository);
+}
 
         private void ViewEmployees_Click(object? sender, RoutedEventArgs e)
         {

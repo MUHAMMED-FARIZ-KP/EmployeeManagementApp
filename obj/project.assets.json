@@ -1871,11 +1871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\EmployeeManagementApp\\EmployeeManagementApp.csproj",
+      "projectUniqueName": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\EmployeeManagementApp.csproj",
       "projectName": "EmployeeManagementApp",
-      "projectPath": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\EmployeeManagementApp\\EmployeeManagementApp.csproj",
+      "projectPath": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\EmployeeManagementApp.csproj",
       "packagesPath": "C:\\Users\\muham\\.nuget\\packages\\",
-      "outputPath": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\EmployeeManagementApp\\obj\\",
+      "outputPath": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

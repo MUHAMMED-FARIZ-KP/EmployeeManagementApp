@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bv85OJ0r27Q=",
+  "dgSpecHash": "FF9EXKimj/M=",
   "success": true,
-  "projectFilePath": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\EmployeeManagementApp\\EmployeeManagementApp.csproj",
+  "projectFilePath": "D:\\DEV\\ComeBack\\avalonia_new\\new new\\EmployeeManagementApp\\EmployeeManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\muham\\.nuget\\packages\\avalonia\\11.0.5\\avalonia.11.0.5.nupkg.sha512",
     "C:\\Users\\muham\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
