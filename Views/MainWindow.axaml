@@ -28,6 +28,7 @@
 				<Button Name="viewEmployeesButton"
                         Click="ViewEmployees_Click"
                         Background="Green"
+						Cursor="Hand"
 					
 					Classes="primary"
 					Width="180"
@@ -45,7 +46,8 @@
 					
 					Classes="primary"
 					Width="180"
-					Height="40">
+					Height="40"
+						Cursor="Hand">
 					<StackPanel>
 						<TextBlock Text="Add New Employee"
                                    HorizontalAlignment="Center"
