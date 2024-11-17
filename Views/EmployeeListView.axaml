@@ -1,6 +1,7 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="EmployeeManagementApp.Views.EmployeeListView">
+             x:Class="EmployeeManagementApp.Views.EmployeeListView"
+             Background="#303030">
 	<Grid RowDefinitions="Auto,Auto,*" Margin="10">
 		<!-- Header section -->
 		<StackPanel Grid.Row="0"
@@ -10,6 +11,7 @@
 			<TextBlock Text="Employee List"
                        FontSize="20"
                        FontWeight="Bold"
+                       Foreground="White"
                        VerticalAlignment="Center"/>
 		</StackPanel>
 
@@ -19,33 +21,54 @@
                     Spacing="10"
                     Margin="0,0,0,10">
 			<TextBlock Text="Search by:"
+                      Foreground="White"
                       VerticalAlignment="Center"/>
 			<TextBox Name="nameSearchBox"
                      Width="150"
                      Watermark="Enter name..."
+                     Background="#404040"
+                     Foreground="White"
                      KeyUp="SearchBox_KeyUp"/>
 			<TextBox Name="departmentSearchBox"
                      Width="150"
                      Watermark="Enter department..."
+                     Background="#404040"
+                     Foreground="White"
                      KeyUp="SearchBox_KeyUp"/>
 			<Button Content="Clear Search"
                     Click="ClearSearch_Click"
-                    Background="Red"
+                    Background="#FF4444"
                     Foreground="White"
-					Cursor="Hand"/>
+                    Cursor="Hand"/>
 		</StackPanel>
 
-		<!-- DataGrid with styling for borders and a minimum height -->
+		<!-- DataGrid with consistent styling -->
 		<DataGrid Grid.Row="2"
                   Name="employeeGrid"
                   AutoGenerateColumns="False"
                   IsReadOnly="True"
-                  BorderBrush="Black"
+                  BorderBrush="#555555"
                   BorderThickness="1"
                   GridLinesVisibility="All"
+                  Background="#404040"
+                  Foreground="White"
                   MinHeight="120"
                   MaxHeight="400"
-                  RowHeight="30">
+                  RowHeight="30"
+                  HorizontalScrollBarVisibility="Disabled">
+			<DataGrid.Styles>
+				<Style Selector="DataGridRow">
+					<Setter Property="Background" Value="#404040"/>
+				</Style>
+				<Style Selector="DataGridRow:pointerover /template/ Rectangle#BackgroundRectangle">
+					<Setter Property="Fill" Value="#505050"/>
+				</Style>
+				<Style Selector="DataGridColumnHeader">
+					<Setter Property="Background" Value="#505050"/>
+					<Setter Property="Foreground" Value="White"/>
+				</Style>
+			</DataGrid.Styles>
+
 			<DataGrid.Columns>
 				<DataGridTextColumn Header="ID"
                                   Binding="{Binding Id}"/>
@@ -55,25 +78,28 @@
                                   Binding="{Binding Department}"/>
 				<!-- Actions column with Edit and Delete buttons -->
 				<DataGridTemplateColumn Header="Actions"
-                                      Width="160">
+                                      Width="160"
+                                      MinWidth="160"
+                                      MaxWidth="160">
 					<DataGridTemplateColumn.CellTemplate>
 						<DataTemplate>
 							<StackPanel Orientation="Horizontal"
-                                      Spacing="10">
+                                      Spacing="10"
+                                      HorizontalAlignment="Left">
 								<Button Content="Edit"
                                         Click="EditEmployee_Click"
-                                        Background="Green"
+                                        Background="#4CAF50"
                                         Foreground="White"
                                         Height="30"
                                         Width="60"
-										Cursor="Hand"/>
+                                        Cursor="Hand"/>
 								<Button Content="Delete"
                                         Click="DeleteEmployee_Click"
-                                        Background="Red"
+                                        Background="#FF4444"
                                         Foreground="White"
                                         Height="30"
                                         Width="60"
-										Cursor="Hand"/>
+                                        Cursor="Hand"/>
 							</StackPanel>
 						</DataTemplate>
 					</DataGridTemplateColumn.CellTemplate>

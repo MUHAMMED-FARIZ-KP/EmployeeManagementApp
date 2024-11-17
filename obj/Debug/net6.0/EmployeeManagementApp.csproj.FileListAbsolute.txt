@@ -92,7 +92,6 @@ D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\Aval
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\refint\EmployeeManagementApp.dll
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\EmployeeManagementApp.dll
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\EmployeeManagementApp.pdb
-D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\Employee.8111CF64.Up2Date
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\EmployeeManagementApp.genruntimeconfig.cache
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\ref\EmployeeManagementApp.dll
 D:\DEV\ComeBack\avalonia_new\new new\backup2-two button without doj\EmployeeManagementApp\bin\Debug\net6.0\EmployeeManagementApp.exe
@@ -290,3 +289,4 @@ D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\EmployeeManagementApp
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\EmployeeManagementApp\obj\Debug\net6.0\EmployeeManagementApp.genruntimeconfig.cache
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\EmployeeManagementApp\obj\Debug\net6.0\ref\EmployeeManagementApp.dll
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\EmployeeManagementApp.sourcelink.json
+D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\Employee.8111CF64.Up2Date

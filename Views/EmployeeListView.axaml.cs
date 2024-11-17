@@ -1,9 +1,9 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using System.Collections.ObjectModel;
-using System.Collections.Generic; // Add this for List<>
-using System.Linq; // Add this for LINQ operations
-using Avalonia.Input; // Add this for KeyEventArgs
+using System.Collections.Generic;
+using System.Linq;
+using Avalonia.Input;
 
 namespace EmployeeManagementApp.Views
 {
@@ -23,6 +23,7 @@ namespace EmployeeManagementApp.Views
             _allEmployees = new List<Employee>();
             RefreshEmployees();
         }
+        
 
         private void SearchBox_KeyUp(object? sender, KeyEventArgs e)
         {

@@ -25,7 +25,7 @@ namespace EmployeeManagementApp.Views
             if (string.IsNullOrWhiteSpace(nameTextBox?.Text) || string.IsNullOrWhiteSpace(departmentTextBox?.Text))
             {
                 messageText.Text = "Please fill in all fields";
-                messageText.Foreground = new SolidColorBrush(Colors.Red);
+                messageText.Foreground = new SolidColorBrush(Colors.Red);  // Set red color for error message
                 await ClearMessageAfterDelay(messageText);
                 return;
             }
@@ -34,7 +34,6 @@ namespace EmployeeManagementApp.Views
             {
                 Name = nameTextBox.Text,
                 Department = departmentTextBox.Text,
-
             };
 
             _repository.AddEmployee(employee);
@@ -43,6 +42,7 @@ namespace EmployeeManagementApp.Views
             nameTextBox.Text = string.Empty;
             departmentTextBox.Text = string.Empty;
             messageText.Text = "Employee added successfully!";
+            messageText.Foreground = new SolidColorBrush(Colors.White); // Set white color for success message
             await ClearMessageAfterDelay(messageText);
         }
 

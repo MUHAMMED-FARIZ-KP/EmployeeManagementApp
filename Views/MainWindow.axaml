@@ -19,8 +19,10 @@
 			<TextBlock Text="Employee Management System"
                        FontSize="24"
                        FontWeight="Bold"
+                       Foreground="White"
                        Margin="0,0,0,20"
                        HorizontalAlignment="Center"/>
+			
 
 			<StackPanel Orientation="Horizontal"
                         Spacing="20"
@@ -28,30 +30,32 @@
 				<Button Name="viewEmployeesButton"
                         Click="ViewEmployees_Click"
                         Background="Green"
-						Cursor="Hand"
-					
-					Classes="primary"
-					Width="180"
-					Height="40">
+                        Foreground="White"
+                        Cursor="Hand"
+                        Classes="primary"
+                        Width="180"
+                        Height="40">
 					<StackPanel>
 						<TextBlock Text="View All Employees"
                                    HorizontalAlignment="Center"
-                                   FontSize="16"/>
+                                   FontSize="16"
+                                   Foreground="White"/>
 					</StackPanel>
 				</Button>
 
 				<Button Name="addEmployeeButton"
                         Click="AddEmployee_Click"
                         Background="Green"
-					
-					Classes="primary"
-					Width="180"
-					Height="40"
-						Cursor="Hand">
+                        Foreground="White"
+                        Cursor="Hand"
+                        Classes="primary"
+                        Width="180"
+                        Height="40">
 					<StackPanel>
 						<TextBlock Text="Add New Employee"
                                    HorizontalAlignment="Center"
-                                   FontSize="16"/>
+                                   FontSize="16"
+                                   Foreground="White"/>
 					</StackPanel>
 				</Button>
 			</StackPanel>
@@ -66,6 +70,7 @@
 			<!-- Default Welcome Message -->
 			<TextBlock Text="Welcome to Employee Management System"
                        FontSize="20"
+                       Foreground="White"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center"/>
 		</ContentControl>

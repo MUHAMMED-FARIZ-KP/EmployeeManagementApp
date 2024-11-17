@@ -34,5 +34,6 @@ namespace EmployeeManagementApp.Views
             var contentArea = this.FindControl<ContentControl>("contentArea");
             contentArea.Content = _addEmployeeView;
         }
+
     }
 }
