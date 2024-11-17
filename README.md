@@ -1,3 +1,8 @@
+
+
+https://github.com/user-attachments/assets/6a718bcf-daaa-450b-9a0e-814b28875e25
+
+
 # Employee Management Application
 
 This is an Employee Management Application built using Avalonia (.NET) for Windows Desktop. The application helps manage employee records, including adding, viewing, updating, and deleting employee data. It uses a local SQLite database to store the information and provides an intuitive UI design for smooth user experience.
