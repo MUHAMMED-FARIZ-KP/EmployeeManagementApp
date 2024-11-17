@@ -33,7 +33,7 @@ To run this application, you need to have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/MUHAMMED-FARIZ-KP/EmployeeManagementApp.git
+    git clone [https://github.com/MUHAMMED-FARIZ-KP/EmployeeManagementApp.git](https://github.com/MUHAMMED-FARIZ-KP/EmployeeManagementApp.git)
     cd EmployeeManagementApp
     ```
 
