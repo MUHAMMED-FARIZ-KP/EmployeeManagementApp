@@ -14,7 +14,7 @@ This is an Employee Management Application built using Avalonia (.NET) for Windo
 ## Technology Stack
 
 - **Frontend**: Avalonia (.NET)
-- **Backend**: C# (for business logic and data handling)
+- **Backend**: C# 
 - **Database**: SQLite (for local storage)
 - **UI Framework**: Avalonia (cross-platform UI framework for .NET)
 
