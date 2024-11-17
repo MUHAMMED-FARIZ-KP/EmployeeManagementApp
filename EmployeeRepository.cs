@@ -12,63 +12,67 @@ namespace EmployeeManagementApp
         public void InitializeDatabase()
         {
             using (var connection = new SqliteConnection(ConnectionString))
-            {
-                connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS Employees (
-                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        Name TEXT NOT NULL,
-                        Department TEXT NOT NULL
-                    )";
-                command.ExecuteNonQuery();
-            }
+
+    {
+        connection.Open();
+        var command = connection.CreateCommand();
+        command.CommandText = @"
+            CREATE TABLE IF NOT EXISTS Employees (
+                Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                Name TEXT NOT NULL,
+                Department TEXT NOT NULL,
+                DateOfJoining TEXT NOT NULL
+            )";
+        command.ExecuteNonQuery();
+    }
         }
 
-        public void AddEmployee(Employee employee)
+       public void AddEmployee(Employee employee)
+{
+    using (var connection = new SqliteConnection(ConnectionString))
+    {
+        connection.Open();
+        var command = connection.CreateCommand();
+        command.CommandText = @"
+            INSERT INTO Employees (Name, Department, DateOfJoining)
+            VALUES ($name, $department, $dateOfJoining);
+            SELECT last_insert_rowid();";
+        command.Parameters.AddWithValue("$name", employee.Name ?? string.Empty);
+        command.Parameters.AddWithValue("$department", employee.Department ?? string.Empty);
+        command.Parameters.AddWithValue("$dateOfJoining", employee.DateOfJoining.ToString("yyyy-MM-dd"));
+        var result = command.ExecuteScalar();
+        if (result != null)
         {
-            using (var connection = new SqliteConnection(ConnectionString))
-            {
-                connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = @"
-                    INSERT INTO Employees (Name, Department)
-                    VALUES ($name, $department);
-                    SELECT last_insert_rowid();";
-                command.Parameters.AddWithValue("$name", employee.Name ?? string.Empty);
-                command.Parameters.AddWithValue("$department", employee.Department ?? string.Empty);
-                var result = command.ExecuteScalar();
-                if (result != null)
-                {
-                    employee.Id = Convert.ToInt32(result);
-                }
-            }
+            employee.Id = Convert.ToInt32(result);
         }
+    }
+}
 
         public List<Employee> GetAllEmployees()
-        {
-            var employees = new List<Employee>();
-            using (var connection = new SqliteConnection(ConnectionString))
-            {
-                connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = "SELECT Id, Name, Department FROM Employees";
+{
+    var employees = new List<Employee>();
+    using (var connection = new SqliteConnection(ConnectionString))
+    {
+        connection.Open();
+        var command = connection.CreateCommand();
+        command.CommandText = "SELECT Id, Name, Department, DateOfJoining FROM Employees";
 
-                using (var reader = command.ExecuteReader())
+        using (var reader = command.ExecuteReader())
+        {
+            while (reader.Read())
+            {
+                employees.Add(new Employee
                 {
-                    while (reader.Read())
-                    {
-                        employees.Add(new Employee
-                        {
-                            Id = reader.GetInt32(0),
-                            Name = reader.GetString(1),
-                            Department = reader.GetString(2)
-                        });
-                    }
-                }
+                    Id = reader.GetInt32(0),
+                    Name = reader.GetString(1),
+                    Department = reader.GetString(2),
+                    DateOfJoining = DateTime.Parse(reader.GetString(3))
+                });
             }
-            return employees;
         }
+    }
+    return employees;
+}
         public void DeleteEmployee(int id)
     {
         using (var connection = new SqliteConnection(ConnectionString))
@@ -82,20 +86,22 @@ namespace EmployeeManagementApp
     }
 
     public void UpdateEmployee(Employee employee)
+{
+    using (var connection = new SqliteConnection(ConnectionString))
     {
-        using (var connection = new SqliteConnection(ConnectionString))
-        {
-            connection.Open();
-            var command = connection.CreateCommand();
-            command.CommandText = @"
-                UPDATE Employees 
-                SET Name = $name, Department = $department
-                WHERE Id = $id";
-            command.Parameters.AddWithValue("$name", employee.Name ?? string.Empty);
-            command.Parameters.AddWithValue("$department", employee.Department ?? string.Empty);
-            command.Parameters.AddWithValue("$id", employee.Id);
-            command.ExecuteNonQuery();
-        }
+        connection.Open();
+        var command = connection.CreateCommand();
+        command.CommandText = @"
+            UPDATE Employees 
+            SET Name = $name, Department = $department, DateOfJoining = $dateOfJoining
+            WHERE Id = $id";
+        command.Parameters.AddWithValue("$name", employee.Name ?? string.Empty);
+        command.Parameters.AddWithValue("$department", employee.Department ?? string.Empty);
+        command.Parameters.AddWithValue("$dateOfJoining", employee.DateOfJoining.ToString("yyyy-MM-dd"));
+        command.Parameters.AddWithValue("$id", employee.Id);
+        command.ExecuteNonQuery();
     }
+}
+
     }
 }

@@ -13,6 +13,12 @@
                        FontWeight="Bold"
                        Foreground="White"
                        VerticalAlignment="Center"/>
+			<Button Content="Home"
+        Click="BackToMain_Click"
+        Background="#FF4444"
+        Foreground="White"
+        HorizontalAlignment="Right"
+        Margin="20,0,0,0"/>
 		</StackPanel>
 
 		<!-- Search section -->
@@ -70,12 +76,10 @@
 			</DataGrid.Styles>
 
 			<DataGrid.Columns>
-				<DataGridTextColumn Header="ID"
-                                  Binding="{Binding Id}"/>
-				<DataGridTextColumn Header="Name"
-                                  Binding="{Binding Name}"/>
-				<DataGridTextColumn Header="Department"
-                                  Binding="{Binding Department}"/>
+				<DataGridTextColumn Header="ID" Binding="{Binding Id}"/>
+				<DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
+				<DataGridTextColumn Header="Department" Binding="{Binding Department}"/>
+				<DataGridTextColumn Header="Date of Joining" Binding="{Binding DateOfJoining, StringFormat={}{0:dd/MM/yyyy}}"/>
 				<!-- Actions column with Edit and Delete buttons -->
 				<DataGridTemplateColumn Header="Actions"
                                       Width="160"
@@ -86,19 +90,19 @@
 							<StackPanel Orientation="Horizontal"
                                       Spacing="10"
                                       HorizontalAlignment="Left">
-								<Button Content="Edit"
+								<Button Content="Update"
                                         Click="EditEmployee_Click"
                                         Background="#4CAF50"
                                         Foreground="White"
                                         Height="30"
-                                        Width="60"
+                                        Width="65"
                                         Cursor="Hand"/>
 								<Button Content="Delete"
                                         Click="DeleteEmployee_Click"
                                         Background="#FF4444"
                                         Foreground="White"
                                         Height="30"
-                                        Width="60"
+                                        Width="65"
                                         Cursor="Hand"/>
 							</StackPanel>
 						</DataTemplate>

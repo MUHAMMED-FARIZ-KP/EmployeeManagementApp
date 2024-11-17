@@ -22,6 +22,9 @@ build_property.EnableCodeStyleSeverity =
 [D:/DEV/ComeBack/avalonia_new/new new/EmployeeManagementApp/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[D:/DEV/ComeBack/avalonia_new/new new/EmployeeManagementApp/Views/AboutView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [D:/DEV/ComeBack/avalonia_new/new new/EmployeeManagementApp/Views/AddEmployeeView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

@@ -41,5 +41,9 @@ namespace EmployeeManagementApp.Views
         {
             _onUpdateComplete?.Invoke();
         }
+        private void BackToMain_Click(object? sender, RoutedEventArgs e)
+{
+    _onUpdateComplete?.Invoke();
+}
     }
 }

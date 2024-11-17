@@ -83,6 +83,18 @@ namespace EmployeeManagementApp.Views
                 RefreshEmployees();
             }
         }
+        private void BackToMain_Click(object? sender, RoutedEventArgs e)
+{
+    // Reset the content to show the welcome message
+    _parentContentArea.Content = new TextBlock
+    {
+        Text = "Welcome to Employee Management System",
+        FontSize = 20,
+        Foreground = new Avalonia.Media.SolidColorBrush(Avalonia.Media.Colors.White),
+        HorizontalAlignment = Avalonia.Layout.HorizontalAlignment.Center,
+        VerticalAlignment = Avalonia.Layout.VerticalAlignment.Center
+    };
+}
 
         public void RefreshEmployees()
 {

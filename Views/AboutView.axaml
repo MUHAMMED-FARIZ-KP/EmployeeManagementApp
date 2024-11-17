@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="EmployeeManagementApp.Views.AboutView">
+	<ScrollViewer VerticalScrollBarVisibility="Auto">
+		<Border Background="#2F2F2F" Padding="20" CornerRadius="10">
+			<TextBlock FontSize="16"
+                       Foreground="White"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Top">
+				<Run Text="Employee Management System" FontWeight="Bold" FontSize="18"/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="This simple and intuitive Windows desktop application is designed to manage employee records efficiently. It provides essential features for performing CRUD (Create, Read, Update, Delete) operations on employee data, making it easy to manage and maintain accurate records."/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="Key Features:" FontWeight="Bold" FontSize="16"/>
+				<LineBreak/>
+				<Run Text="• Create: Add new employee records to the database."/>
+				<LineBreak/>
+				<Run Text="• Read: View a list of existing employees from the database."/>
+				<LineBreak/>
+				<Run Text="• Update: Modify details of existing employee records."/>
+				<LineBreak/>
+				<Run Text="• Delete: Remove employee records from the database."/>
+				<LineBreak/>
+				<LineBreak/>
+				<Run Text="The application uses a local SQLite database for storing employee data and offers an easy-to-navigate interface to manage employee information."/>
+				<LineBreak/>
+				<LineBreak/>
+				<LineBreak/>
+				<!-- Copyright Notice -->
+				<Run Text="© 2024 Muhammed Fariz K P. All rights reserved." FontStyle="Italic"/>
+			</TextBlock>
+		</Border>
+	</ScrollViewer>
+</UserControl>
