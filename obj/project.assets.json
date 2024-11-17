@@ -11,28 +11,68 @@
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "compile": {
-          "ref/net6.0/Avalonia.Base.dll": {},
-          "ref/net6.0/Avalonia.Controls.dll": {},
-          "ref/net6.0/Avalonia.DesignerSupport.dll": {},
-          "ref/net6.0/Avalonia.Dialogs.dll": {},
-          "ref/net6.0/Avalonia.Markup.Xaml.dll": {},
-          "ref/net6.0/Avalonia.Markup.dll": {},
-          "ref/net6.0/Avalonia.Metal.dll": {},
-          "ref/net6.0/Avalonia.MicroCom.dll": {},
-          "ref/net6.0/Avalonia.OpenGL.dll": {},
-          "ref/net6.0/Avalonia.dll": {}
+          "ref/net6.0/Avalonia.Base.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.Controls.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.DesignerSupport.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.Dialogs.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.Markup.Xaml.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.Markup.dll": {
+            "related": ".Xaml.xml;.xml"
+          },
+          "ref/net6.0/Avalonia.Metal.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.MicroCom.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.OpenGL.dll": {
+            "related": ".xml"
+          },
+          "ref/net6.0/Avalonia.dll": {
+            "related": ".Base.xml;.Controls.xml;.DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Base.dll": {},
-          "lib/net6.0/Avalonia.Controls.dll": {},
-          "lib/net6.0/Avalonia.DesignerSupport.dll": {},
-          "lib/net6.0/Avalonia.Dialogs.dll": {},
-          "lib/net6.0/Avalonia.Markup.Xaml.dll": {},
-          "lib/net6.0/Avalonia.Markup.dll": {},
-          "lib/net6.0/Avalonia.Metal.dll": {},
-          "lib/net6.0/Avalonia.MicroCom.dll": {},
-          "lib/net6.0/Avalonia.OpenGL.dll": {},
-          "lib/net6.0/Avalonia.dll": {}
+          "lib/net6.0/Avalonia.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.DesignerSupport.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.Dialogs.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.Markup.Xaml.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.Markup.dll": {
+            "related": ".Xaml.xml;.xml"
+          },
+          "lib/net6.0/Avalonia.Metal.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.MicroCom.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.OpenGL.dll": {
+            "related": ".xml"
+          },
+          "lib/net6.0/Avalonia.dll": {
+            "related": ".Base.xml;.Controls.xml;.DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.xml"
+          }
         },
         "build": {
           "buildTransitive/Avalonia.props": {},
@@ -69,10 +109,14 @@
           "Avalonia.Remote.Protocol": "11.0.5"
         },
         "compile": {
-          "lib/net6.0/Avalonia.Controls.DataGrid.dll": {}
+          "lib/net6.0/Avalonia.Controls.DataGrid.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Controls.DataGrid.dll": {}
+          "lib/net6.0/Avalonia.Controls.DataGrid.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.Desktop/11.0.5": {
@@ -85,10 +129,14 @@
           "Avalonia.X11": "11.0.5"
         },
         "compile": {
-          "lib/net6.0/Avalonia.Desktop.dll": {}
+          "lib/net6.0/Avalonia.Desktop.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Desktop.dll": {}
+          "lib/net6.0/Avalonia.Desktop.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.FreeDesktop/11.0.5": {
@@ -98,10 +146,14 @@
           "Tmds.DBus.Protocol": "0.15.0"
         },
         "compile": {
-          "lib/net6.0/Avalonia.FreeDesktop.dll": {}
+          "lib/net6.0/Avalonia.FreeDesktop.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.FreeDesktop.dll": {}
+          "lib/net6.0/Avalonia.FreeDesktop.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.Native/11.0.5": {
@@ -110,10 +162,14 @@
           "Avalonia": "11.0.5"
         },
         "compile": {
-          "lib/net6.0/Avalonia.Native.dll": {}
+          "lib/net6.0/Avalonia.Native.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Native.dll": {}
+          "lib/net6.0/Avalonia.Native.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/osx/native/libAvaloniaNative.dylib": {
@@ -125,10 +181,14 @@
       "Avalonia.Remote.Protocol/11.0.5": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Avalonia.Remote.Protocol.dll": {}
+          "lib/net6.0/Avalonia.Remote.Protocol.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Remote.Protocol.dll": {}
+          "lib/net6.0/Avalonia.Remote.Protocol.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.Skia/11.0.5": {
@@ -143,10 +203,14 @@
           "SkiaSharp.NativeAssets.WebAssembly": "2.88.6"
         },
         "compile": {
-          "lib/net6.0/Avalonia.Skia.dll": {}
+          "lib/net6.0/Avalonia.Skia.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Skia.dll": {}
+          "lib/net6.0/Avalonia.Skia.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.Themes.Fluent/11.0.5": {
@@ -155,10 +219,14 @@
           "Avalonia": "11.0.5"
         },
         "compile": {
-          "lib/net6.0/Avalonia.Themes.Fluent.dll": {}
+          "lib/net6.0/Avalonia.Themes.Fluent.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Themes.Fluent.dll": {}
+          "lib/net6.0/Avalonia.Themes.Fluent.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.Win32/11.0.5": {
@@ -170,10 +238,14 @@
           "System.Numerics.Vectors": "4.5.0"
         },
         "compile": {
-          "lib/net6.0/Avalonia.Win32.dll": {}
+          "lib/net6.0/Avalonia.Win32.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.Win32.dll": {}
+          "lib/net6.0/Avalonia.Win32.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.X11/11.0.5": {
@@ -184,10 +256,14 @@
           "Avalonia.Skia": "11.0.5"
         },
         "compile": {
-          "lib/net6.0/Avalonia.X11.dll": {}
+          "lib/net6.0/Avalonia.X11.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Avalonia.X11.dll": {}
+          "lib/net6.0/Avalonia.X11.dll": {
+            "related": ".xml"
+          }
         }
       },
       "HarfBuzzSharp/2.8.2.3": {
@@ -197,10 +273,14 @@
           "HarfBuzzSharp.NativeAssets.macOS": "2.8.2.3"
         },
         "compile": {
-          "lib/net6.0/HarfBuzzSharp.dll": {}
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/HarfBuzzSharp.dll": {}
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "HarfBuzzSharp.NativeAssets.Linux/2.8.2.3": {
@@ -312,19 +392,27 @@
           "SQLitePCLRaw.core": "2.1.2"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {}
+          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {}
+          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -343,10 +431,14 @@
           "SkiaSharp.NativeAssets.macOS": "2.88.6"
         },
         "compile": {
-          "lib/net6.0/SkiaSharp.dll": {}
+          "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/SkiaSharp.dll": {}
+          "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "SkiaSharp.NativeAssets.Linux/2.88.6": {
@@ -584,10 +676,14 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Drawing.Common.dll": {}
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Drawing.Common.dll": {}
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -606,10 +702,14 @@
       "System.IO.Pipelines/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.IO.Pipelines.dll": {}
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {}
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -1803,7 +1903,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net6.0": {
@@ -1836,16 +1942,35 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

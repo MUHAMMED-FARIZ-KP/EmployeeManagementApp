@@ -10,7 +10,9 @@
 				<Run Text="Employee Management System" FontWeight="Bold" FontSize="18"/>
 				<LineBreak/>
 				<LineBreak/>
-				<Run Text="This simple and intuitive Windows desktop application is designed to manage employee records efficiently. It provides essential features for performing CRUD operations."/>
+				<Run Text="This simple and intuitive Windows desktop application is designed to manage employee records efficiently."/>
+				<LineBreak/>
+				<Run Text="It provides essential features for performing CRUD operations."/>
 				<LineBreak/>
 				<LineBreak/>
 				<Run Text="Key Features:" FontWeight="Bold" FontSize="16"/>
@@ -23,13 +25,12 @@
 				<LineBreak/>
 				<Run Text="• Delete: Remove employee records from the database."/>
 				<LineBreak/>
-				<LineBreak/>
+				<LineBreak/>	
 				<Run Text="The application uses a local SQLite database for storing employee data and offers an easy-to-navigate interface to manage employee information."/>
 				<LineBreak/>
 				<LineBreak/>
 				<LineBreak/>
-				<!-- Copyright Notice -->
-				<Run Text="© 2024 Muhammed Fariz K P. All rights reserved." FontStyle="Italic"/>
+				
 			</TextBlock>
 		</Border>
 	</ScrollViewer>

@@ -290,4 +290,3 @@ D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\Empl
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\Employee.8111CF64.Up2Date
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\EmployeeManagementApp.genruntimeconfig.cache
 D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\ref\EmployeeManagementApp.dll
-D:\DEV\ComeBack\avalonia_new\new new\EmployeeManagementApp\obj\Debug\net6.0\EmployeeManagementApp.csproj.CopyComplete
