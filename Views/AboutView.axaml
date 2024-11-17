@@ -10,7 +10,7 @@
 				<Run Text="Employee Management System" FontWeight="Bold" FontSize="18"/>
 				<LineBreak/>
 				<LineBreak/>
-				<Run Text="This simple and intuitive Windows desktop application is designed to manage employee records efficiently. It provides essential features for performing CRUD (Create, Read, Update, Delete) operations on employee data, making it easy to manage and maintain accurate records."/>
+				<Run Text="This simple and intuitive Windows desktop application is designed to manage employee records efficiently. It provides essential features for performing CRUD operations."/>
 				<LineBreak/>
 				<LineBreak/>
 				<Run Text="Key Features:" FontWeight="Bold" FontSize="16"/>
