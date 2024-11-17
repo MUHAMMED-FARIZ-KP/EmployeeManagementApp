@@ -65,20 +65,11 @@ If you need to apply database updates (such as adding new columns), follow these
 2. Use Entity Framework migrations or manually update the SQLite database as required.
 3. Make sure to apply any necessary changes to the UI to reflect the new database structure.
 
-## Known Issues
-
-- Build warnings are present during compilation.
-- Issues with the application not opening may occur under certain conditions. Please ensure all dependencies are correctly installed.
-- A data type issue may occur when converting `DateTimeOffset` to `DateTime`. This is being worked on and will be resolved in a future update.
-
 ## Contributing
 
 Contributions are welcome! If you find bugs or have ideas for improvements, feel free to open an issue or create a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-For any queries or feedback, please contact [Muhammed Fariz KP](mailto:muhammedfarizkp@example.com).
+For any queries or feedback, please contact [Muhammed Fariz KP](mailto:farizz7676off@gmail.com).
