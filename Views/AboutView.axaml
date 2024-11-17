@@ -29,7 +29,11 @@
 				<Run Text="The application uses a local SQLite database for storing employee data and offers an easy-to-navigate interface to manage employee information."/>
 				<LineBreak/>
 				<LineBreak/>
+				<Run Text="Contact:"/>
 				<LineBreak/>
+				<Run Text="    Mail : farizz7676off@gmail.com || Ph : +918113081411  || "/>
+				<LineBreak/>
+				
 				
 			</TextBlock>
 		</Border>

@@ -1,12 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bin\\Debug",
-    "\\bin\\Release\\net6.0",
-    "\\bin\\Release\\net6.0\\win-x86",
     "\\Models",
     "\\Views"
   ],
-  "SelectedNode": "\\Views\\MainWindow.axaml",
   "PreviewInSolutionExplorer": false
 }
